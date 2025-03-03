@@ -262,64 +262,56 @@
   }
 }
 
+
+
+
+
 @media (max-width: 768px) {
-    /* 🔹 Keep image proportions correct and centered */
+    /* Keep image 400x300 without distortion */
     .author__avatar {
-        width: 100%;
-        max-width: 500px; /* Increase max width */
-        height: auto; /* Maintain aspect ratio */
+        width: 100%; /* Ensures responsiveness */
+        max-width: 600px; /* Keeps the max size */
+        height: auto; /* Maintains aspect ratio */
         display: block;
         margin: 0 auto; /* Center horizontally */
     }
 
-    /* 🔹 Ensure the button and dropdown are centered */
+    /* Center Follow button properly */
     .author__urls-wrapper {
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: center; /* Centers content */
         text-align: center;
+        margin-top: 15px; /* Adds spacing */
     }
 
-    .author__urls {
-        position: relative; /* Keep positioning stable */
-        display: flex;
-        flex-direction: column;
-        align-items: center; /* Ensure proper centering */
-       margin-top: 15px;
-    }
-
-   .author__urls a {
+    .author__urls a {
         display: inline-block;
         text-align: center;
-        padding: 10px 20px;
-        border: 2px solid #007bff;
-        background-color: #007bff;
-        color: white;
-        font-size: 16px;
+        padding: 10px 20px; /* Proper padding */
+        border: 2px solid #007bff; /* Keep button border */
+        background-color: #007bff; /* Default button color */
+        color: white; /* Text color */
+        font-size: 16px; /* Keeps text readable */
         text-decoration: none;
-        box-shadow: none;
+        box-shadow: none; /* Removes weird pressed effect */
         transform: scale(1); /* Prevents scaling issues */
-        transition: all 0.2s ease-in-out;
-        user-select: none; /* Prevents accidental highlighting */
+        transition: all 0.2s ease-in-out; /* Smooth effect */
     }
 
-  
+    .author__urls a:hover {
+        background-color: #0056b3; /* Darker blue on hover */
+    }
 
     .author__urls a:active {
         transform: scale(0.95); /* Only slightly shrink when clicked */
     }
-   
-   .author__urls a:focus {
-    outline: none; /* Removes the focus highlight */
-    box-shadow: none; /* Prevents unwanted styling */
-   }
 
-    /* 🔹 Center the dropdown properly */
-    .author__urls .dropdown-box {
+   .author__urls .dropdown-box {
         position: absolute;
         top: calc(100% + 5px); /* Places it right below the button */
         left: 50%; /* Moves it to the center */
-        transform: translateX(-50%); /* Perfectly centers it */
+        /*transform: translateX(-50%); /* Perfectly centers it */
         width: auto;
         min-width: 150px; /* Adjust width if necessary */
         background-color: white;
