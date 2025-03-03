@@ -287,6 +287,7 @@
 
     .author__urls a {
         display: inline-block;
+        position: relative;
         text-align: center;
         padding: 10px 20px; /* Proper padding */
         border: 2px solid #007bff; /* Keep button border */
@@ -297,6 +298,7 @@
         box-shadow: none; /* Removes weird pressed effect */
         transform: scale(1); /* Prevents scaling issues */
         transition: all 0.2s ease-in-out; /* Smooth effect */
+        z-index: 2; 
     }
 
     .author__urls a:hover {
