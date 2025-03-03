@@ -261,3 +261,13 @@
     }
   }
 }
+
+@media (max-width: 768px) { /* Apply only to mobile screens */
+    .author__avatar {
+        width: 150px; /* Increase size */
+        height: 150px; /* Keep it square */
+        display: block; /* Allows centering */
+        margin: 0 auto; /* Centers the image */
+    }
+}
+
