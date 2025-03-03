@@ -285,6 +285,7 @@
         display: flex;
         flex-direction: column;
         align-items: center; /* Ensure proper centering */
+       margin-top: 15px;
     }
 
    .author__urls a {
@@ -297,14 +298,17 @@
         font-size: 16px;
         text-decoration: none;
         box-shadow: none;
-        transform: none;
+        transform: scale(1); /* Prevents scaling issues */
         transition: all 0.2s ease-in-out;
         user-select: none; /* Prevents accidental highlighting */
     }
 
-    /* ✅ Prevent button from looking pressed on page load */
-    .author__urls a:focus {
-        outline: none;
+     .author__urls a:hover {
+        background-color: #0056b3; /* Darker blue on hover */
+    }
+
+    .author__urls a:active {
+        transform: scale(0.95); /* Only slightly shrink when clicked */
     }
 
 
