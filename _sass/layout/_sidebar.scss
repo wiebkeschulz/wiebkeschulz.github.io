@@ -262,26 +262,35 @@
   }
 }
 
-@media (max-width: 768px) { /* Apply only to mobile screens */
+@media (max-width: 768px) { /* Mobile styles */
     .author__avatar {
-        width: 300px;
-        height: 400px;
+        width: 400px;
+        height: 300px;
         display: block;
         margin: 0 auto;
     }
 
-    .author__urls-wrapper { /* Wrapper for links/buttons */
+    .author__urls-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centers content horizontally */
+        justify-content: center; /* Centers content vertically if needed */
         text-align: center;
+        margin-top: 10px; /* Adds spacing from the avatar */
     }
 
     .author__urls {
+        width: 100%; /* Ensures full width for centering */
         display: flex;
         flex-direction: column;
-        align-items: center; /* Ensures everything inside is centered */
+        align-items: center;
     }
 
-    .author__urls a { /* Style for buttons/links */
+    .author__urls a {
         display: inline-block;
-        margin-top: 10px; /* Add spacing if needed */
+        text-align: center;
+        width: auto; /* Keeps button width normal */
+        margin-top: 10px; /* Adjust spacing as needed */
     }
 }
+
