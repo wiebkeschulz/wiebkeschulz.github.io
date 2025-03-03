@@ -302,6 +302,19 @@
     .author__urls a:active {
         transform: scale(0.95); /* Only slightly shrink when clicked */
     }
+
+   .author__urls .dropdown-box { 
+        position: absolute;
+        top: 100%; /* Places it directly below the button */
+        left: 50%; /* Centers horizontally */
+        transform: translateX(-50%); /* Perfect centering */
+        width: max-content; /* Prevents box from being too wide */
+        background-color: white;
+        border: 1px solid #ccc;
+        padding: 10px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        z-index: 1; /* Ensures dropdown appears correctly */
+    }
 }
 
 
