@@ -308,7 +308,11 @@
     .author__urls a:active {
         transform: scale(0.95); /* Only slightly shrink when clicked */
     }
-
+   
+   .author__urls a:focus {
+    outline: none; /* Removes the focus highlight */
+    box-shadow: none; /* Prevents unwanted styling */
+   }
 
     /* 🔹 Center the dropdown properly */
     .author__urls .dropdown-box {
