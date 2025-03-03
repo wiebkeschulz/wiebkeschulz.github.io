@@ -285,6 +285,13 @@
         margin-top: 15px; /* Adds spacing */
     }
 
+   .author__urls {
+        position: relative; /* Keep positioning stable */
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Ensure proper centering */
+    }
+
     .author__urls a {
         display: inline-block;
         position: relative;
@@ -296,7 +303,7 @@
         font-size: 16px; /* Keeps text readable */
         text-decoration: none;
         box-shadow: none; /* Removes weird pressed effect */
-        transform: scale(1); /* Prevents scaling issues */
+        transform: none; /* Prevents scaling issues */
         transition: all 0.2s ease-in-out; /* Smooth effect */
         z-index: 2; 
     }
