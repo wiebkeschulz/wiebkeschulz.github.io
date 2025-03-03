@@ -307,10 +307,6 @@
         outline: none;
     }
 
-    /* ✅ Fix: Ensure it only looks pressed when clicked */
-    .author__urls a:active {
-        transform: scale(0.95); /* Press effect only when actually clicked */
-    }
 
     /* 🔹 Center the dropdown properly */
     .author__urls .dropdown-box {
