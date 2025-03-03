@@ -311,7 +311,7 @@
         position: absolute;
         top: calc(100% + 5px); /* Places it right below the button */
         left: 50%; /* Moves it to the center */
-        /*transform: translateX(-50%); /* Perfectly centers it */
+        transform: translateX(-50%); /* Perfectly centers it */
         width: auto;
         min-width: 150px; /* Adjust width if necessary */
         background-color: white;
