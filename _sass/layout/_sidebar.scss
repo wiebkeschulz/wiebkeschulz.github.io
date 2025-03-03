@@ -264,10 +264,24 @@
 
 @media (max-width: 768px) { /* Apply only to mobile screens */
     .author__avatar {
-        width: 150px; /* Increase size */
-        height: 150px; /* Keep it square */
-        display: block; /* Allows centering */
-        margin: 0 auto; /* Centers the image */
+        width: 300px;
+        height: 400px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .author__urls-wrapper { /* Wrapper for links/buttons */
+        text-align: center;
+    }
+
+    .author__urls {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Ensures everything inside is centered */
+    }
+
+    .author__urls a { /* Style for buttons/links */
+        display: inline-block;
+        margin-top: 10px; /* Add spacing if needed */
     }
 }
-
