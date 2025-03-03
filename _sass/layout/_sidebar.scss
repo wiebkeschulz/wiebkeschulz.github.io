@@ -264,12 +264,12 @@
 
 @media (max-width: 768px) {
     /* Keep image 400x300 without distortion */
-    .author__avatar {
-        width: 100%; /* Ensures responsiveness */
-        max-width: 400px; /* Keeps the max size */
-        height: auto; /* Maintains aspect ratio */
+   .author__avatar {
+        width: 100%;
+        max-width: 500px; /* Bigger, but still proportional */
+        height: auto;
         display: block;
-        margin: 0 auto; /* Center horizontally */
+        margin: 0 auto;
     }
 
     /* Center Follow button properly */
