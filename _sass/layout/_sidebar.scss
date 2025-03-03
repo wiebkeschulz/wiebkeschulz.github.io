@@ -303,7 +303,7 @@
         font-size: 16px; /* Keeps text readable */
         text-decoration: none;
         box-shadow: none; /* Removes weird pressed effect */
-        transform: none; /* Prevents scaling issues */
+        transform: scale(1); /* Prevents scaling issues */
         transition: all 0.2s ease-in-out; /* Smooth effect */
         z-index: 2; 
     }
