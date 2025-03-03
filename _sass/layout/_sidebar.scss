@@ -287,26 +287,29 @@
         align-items: center; /* Ensure proper centering */
     }
 
-    .author__urls a {
+   .author__urls a {
         display: inline-block;
         text-align: center;
-        padding: 10px 20px; /* Proper padding */
-        border: 2px solid #007bff; /* Keep button border */
-        background-color: #007bff; /* Default button color */
-        color: white; /* Text color */
-        font-size: 16px; /* Keeps text readable */
+        padding: 10px 20px;
+        border: 2px solid #007bff;
+        background-color: #007bff;
+        color: white;
+        font-size: 16px;
         text-decoration: none;
-        box-shadow: none; /* Fix pressed look */
-        transform: none; /* Prevent scaling on load */
-        transition: all 0.2s ease-in-out; /* Smooth effect */
+        box-shadow: none;
+        transform: none;
+        transition: all 0.2s ease-in-out;
+        user-select: none; /* Prevents accidental highlighting */
     }
 
-    .author__urls a:hover {
-        background-color: #0056b3; /* Darker blue on hover */
+    /* ✅ Prevent button from looking pressed on page load */
+    .author__urls a:focus {
+        outline: none;
     }
 
+    /* ✅ Fix: Ensure it only looks pressed when clicked */
     .author__urls a:active {
-        transform: scale(0.95); /* Slight press effect when clicked */
+        transform: scale(0.95); /* Press effect only when actually clicked */
     }
 
     /* 🔹 Center the dropdown properly */
