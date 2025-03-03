@@ -285,12 +285,12 @@
         margin-top: 15px; /* Adds spacing */
     }
 
-   .author__urls {
-        position: relative; /* Keep positioning stable */
+   /*.author__urls {
+        position: relative; /* Keep positioning stable 
         display: flex;
         flex-direction: column;
-        align-items: center; /* Ensure proper centering */
-    }
+        align-items: center; /* Ensure proper centering 
+    } */
 
     .author__urls a {
         display: inline-block;
