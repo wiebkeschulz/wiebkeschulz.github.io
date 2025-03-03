@@ -263,18 +263,16 @@
 }
 
 @media (max-width: 768px) {
-    .author__urls {
-        position: relative; /* Keeps everything positioned correctly */
-        display: flex;
-        flex-direction: column;
-        align-items: center; /* Ensures everything inside is centered */
+    /* 🔹 Keep image proportions correct and centered */
+    .author__avatar {
+        width: 100%;
+        max-width: 500px; /* Increase max width */
+        height: auto; /* Maintain aspect ratio */
+        display: block;
+        margin: 0 auto; /* Center horizontally */
     }
 
-    .author__urls a {
-        position: relative;
-        z-index: 2; /* Makes sure the button stays on top */
-    }
-
+    /* 🔹 Ensure the button and dropdown are centered */
     .author__urls-wrapper {
         display: flex;
         flex-direction: column;
@@ -282,7 +280,36 @@
         text-align: center;
     }
 
-    /* Center the dropdown */
+    .author__urls {
+        position: relative; /* Keep positioning stable */
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Ensure proper centering */
+    }
+
+    .author__urls a {
+        display: inline-block;
+        text-align: center;
+        padding: 10px 20px; /* Proper padding */
+        border: 2px solid #007bff; /* Keep button border */
+        background-color: #007bff; /* Default button color */
+        color: white; /* Text color */
+        font-size: 16px; /* Keeps text readable */
+        text-decoration: none;
+        box-shadow: none; /* Fix pressed look */
+        transform: none; /* Prevent scaling on load */
+        transition: all 0.2s ease-in-out; /* Smooth effect */
+    }
+
+    .author__urls a:hover {
+        background-color: #0056b3; /* Darker blue on hover */
+    }
+
+    .author__urls a:active {
+        transform: scale(0.95); /* Slight press effect when clicked */
+    }
+
+    /* 🔹 Center the dropdown properly */
     .author__urls .dropdown-box {
         position: absolute;
         top: calc(100% + 5px); /* Places it right below the button */
@@ -297,6 +324,7 @@
         z-index: 1; /* Keeps it below the button */
     }
 }
+
 
 
 
