@@ -263,32 +263,35 @@
 }
 
 @media (max-width: 768px) {
+    /* Keep image 400x300 without distortion */
+    .author__avatar {
+        width: 100%; /* Ensures responsiveness */
+        max-width: 400px; /* Keeps the max size */
+        height: auto; /* Maintains aspect ratio */
+        display: block;
+        margin: 0 auto; /* Center horizontally */
+    }
+
+    /* Center Follow button properly */
     .author__urls-wrapper {
         display: flex;
         flex-direction: column;
         align-items: center; /* Centers content */
         text-align: center;
-        margin-top: 10px; /* Adds spacing */
-    }
-
-    .author__urls {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        margin-top: 15px; /* Adds spacing */
     }
 
     .author__urls a {
         display: inline-block;
         text-align: center;
-        width: auto;
-        margin-top: 10px;
-        padding: 8px 15px; /* Fix padding */
-        border: 2px solid #007bff; /* Button border */
-        background-color: #007bff; /* Button color */
+        padding: 10px 20px; /* Proper padding */
+        border: 2px solid #007bff; /* Keep button border */
+        background-color: #007bff; /* Default button color */
         color: white; /* Text color */
-        box-shadow: none; /* Removes unwanted shadow */
-        transform: none; /* Prevents weird scaling */
+        font-size: 16px; /* Keeps text readable */
+        text-decoration: none;
+        box-shadow: none; /* Removes weird pressed effect */
+        transform: scale(1); /* Prevents scaling issues */
         transition: all 0.2s ease-in-out; /* Smooth effect */
     }
 
@@ -297,9 +300,9 @@
     }
 
     .author__urls a:active {
-        transform: scale(0.95); /* Only shrink slightly when clicked */
-        box-shadow: none;
+        transform: scale(0.95); /* Only slightly shrink when clicked */
     }
 }
+
 
 
