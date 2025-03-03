@@ -303,9 +303,7 @@
         user-select: none; /* Prevents accidental highlighting */
     }
 
-     .author__urls a:hover {
-        background-color: #0056b3; /* Darker blue on hover */
-    }
+  
 
     .author__urls a:active {
         transform: scale(0.95); /* Only slightly shrink when clicked */
