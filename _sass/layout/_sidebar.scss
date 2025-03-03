@@ -317,6 +317,7 @@
     }
 
    .author__urls .dropdown-box {
+        display: none;
         position: absolute;
         top: calc(100% + 5px); /* Places it right below the button */
         left: 50%; /* Moves it to the center */
