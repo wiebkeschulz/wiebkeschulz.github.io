@@ -269,7 +269,7 @@
 @media (max-width: 768px) {
     /* Keep image 400x300 without distortion */
     .author__avatar {
-        width: 100%; /* Ensures responsiveness */
+        width: 200%; /* Ensures responsiveness */
         max-width: 600px; /* Keeps the max size */
         height: auto; /* Maintains aspect ratio */
         display: block;
@@ -308,9 +308,9 @@
         z-index: 2; 
     }
 
-    .author__urls a:hover {
-        background-color: #0056b3; /* Darker blue on hover */
-    }
+    /*.author__urls a:hover {
+        background-color: #0056b3; /* Darker blue on hover 
+    }*/
 
     .author__urls a:active {
         transform: scale(0.95); /* Only slightly shrink when clicked */
