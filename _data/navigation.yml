@@ -11,11 +11,13 @@ main:
   - title: "CV"
     url: /files/CV.pdf
     
+  - title: "Projects"
+    url: /projects/
+    
   - title: "Publications"
     url: /publications/
 
-  - title: "Projects"
-    url: /projects/
+
 
   #- title: "Talks"
   #  url: /talks/    
