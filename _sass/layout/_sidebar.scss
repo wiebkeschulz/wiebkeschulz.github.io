@@ -269,7 +269,7 @@
 @media (max-width: 768px) {
     /* Keep image 400x300 without distortion */
     .author__avatar {
-        width: 200%; /* Ensures responsiveness */
+        width: 100%; /* Ensures responsiveness */
         max-width: 600px; /* Keeps the max size */
         height: auto; /* Maintains aspect ratio */
         display: block;
@@ -297,8 +297,8 @@
         position: relative;
         text-align: center;
         padding: 10px 20px; /* Proper padding */
-        border: 2px solid #007bff; /* Keep button border */
-        background-color: #007bff; /* Default button color */
+         /*border: 2px solid #007bff; Keep button border */
+        /*background-color: #007bff;  Default button color */
         color: white; /* Text color */
         font-size: 16px; /* Keeps text readable */
         text-decoration: none;
