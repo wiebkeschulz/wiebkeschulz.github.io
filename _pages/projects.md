@@ -10,7 +10,7 @@ redirect_from:
 # Projects 
 ## Cultural Associations of Occupations 
 Using word embeddings I measured the cultural associations of occupations along multiple dimensions. Follow [this link](https://diego-strassmann.shinyapps.io/Cultural_Associations2/) for an interactive visualization of results and a detailed report on methods and findings
-![job_profiles](/diegostrassmann.github.io/images/job_profiles.png)
+![job_profiles](/diegostrassmann.github.io/images/job_profiles.png){: align-bottom width="300px" height="300px"}
 
 
 
