@@ -9,13 +9,13 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default"
-title                    : "Diego Strassmann"
+title                    : "Wiebke Schulz"
 title_separator          : "-"
-name                     : &name "Diego Strassmann"
+name                     : &name "Wiebke Schulz"
 description              : &description "personal description"
-url                      : https://dstrassmann.github.io # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io"
+url                      : https://wiebkeschulz.github.io # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "/dstrassmann/dstrassmann.github.io"
+repository               : "/wiebkeschulz/wiebkeschulz.github.io"
 
 # Site Author - The following control what appear as part of the author content on the side bar.
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
@@ -29,11 +29,11 @@ author:
   location         : #"Earth"
   employer         : #"SOCIUM"
   uri              : # URL
-  email            : "strassma@uni-bremen.de" 
+  email            : "wschulz@uni-bremen.de" 
 
   # Academic websites
   arxiv            : # URL - Update with the correct link to your profile
-  googlescholar    : #"https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
+  googlescholar    : "https://scholar.google.se/citations?user=DG-iA84AAAAJ&hl=de"
   impactstory      : # URL
   orcid            : #"http://orcid.org/yourorcidurl"
   semantic         : # URL
@@ -50,7 +50,7 @@ author:
   stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")    
 
   # Social media
-  bluesky          : "d-strassmann-rocha.bsky.social" # Replace this with you Bluesky username
+  bluesky          : #"d-strassmann-rocha.bsky.social" # Replace this with you Bluesky username
   facebook         : # Username
   flickr           : # Username
   foursquare       : # Username
@@ -59,7 +59,7 @@ author:
   keybase          : # Username
   instagram        : # Username
   lastfm           : # Username
-  linkedin         : "diego-strassmann-rocha-057a91325"
+  linkedin         : #"diego-strassmann-rocha-057a91325"
   mastodon         : # URL
   medium           : # URL
   pinterest        : # Username
